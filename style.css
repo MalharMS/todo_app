@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@600&display=swap');
+
+*, *:before, *:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+*::selection{
+    background-color: #ff0000;
+    color: azure;
+}
+
+body  {
+    height: 100vh;
+    background: linear-gradient(135deg, #e62c29, #df6f6d);
+}
+.container {
+    width: 40%;
+    min-width: 450px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    padding: 30px 40px;
+}
+#newtask {
+    position: relative;
+    background-color: white;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+
+}
+#newtask input{
+    width: 70%;
+    height: 45px;
+    font-family: 'Hind Siliguri';
+    font-size: 15px;
+    border-radius: 2px solid #d1d3d4;
+    padding: 12px;
+    color: #000;
+    font-weight: 500;
+    position: relative;
+}
+
+#newtask input:focus {
+    outline: none;
+    border-color: #dfdfdf;
+}
+
+#newtask button {
+    position: relative;
+    float: right;
+    width: 20%;
+    height: 45px;
+    border-radius: 5px;
+    font-family: 'Hind Siliguri';
+    font-weight: 500;
+    font-size: 16px;
+    background-color: #ff3633;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+#tasks {
+    background-color: #fff;
+    padding: 30px 20px;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+.task {
+    background-color: #fff;
+    height: 50px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 2px solid #d1d3d4;
+    cursor: pointer;
+    font-family: Hind Siliguri;
+}
+.task button {
+    background-color: #ff3633;
+    color: #fff;
+    height: 100%;
+    width: 40px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    outline-offset: none;
+}
+
+.completed {
+    text-decoration: line-through;
+}
